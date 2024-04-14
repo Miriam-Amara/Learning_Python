@@ -9,3 +9,7 @@ class Product:
     @staticmethod
     def get_id():
         return str(uuid.uuid4().fields[-1])[:6]
+    
+
+for name in sorted(Product.__dict__):
+    print(name)
